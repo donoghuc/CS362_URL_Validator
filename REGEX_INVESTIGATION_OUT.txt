@@ -1,0 +1,2160 @@
+*************************
+URL: http://www.google.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://www.google.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://go.au/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://0.0.0.0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.255.255.255/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: http://255.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://www.google.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://go.au/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://0.0.0.0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.255.255.255/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: ftp://255.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://www.google.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://go.au/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://0.0.0.0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.255.255.255/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:80/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:65535/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com:0/test1/file
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/?action=view
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/?action=edit&mode=up
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/
+PATH: /test1/
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/file?action=view
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/file?action=edit&mode=up
+PATH: /test1/file
+good: true
+bad: false
+*************************
+URL: h3t://255.com/test1/file
+PATH: /test1/file
+good: true
+bad: false
