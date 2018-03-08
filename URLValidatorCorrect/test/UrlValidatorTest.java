@@ -48,6 +48,17 @@ protected void setUp() {
 //    
 //        testIsValid(testUrlPartsOptions, options);
    }
+   
+   public void testManualTest_2()
+   {   //This test shows the toLower _ toUpper bug
+	   System.out.println("manual test");
+	   String[] schemes = {"http","bad"};
+	   UrlValidator urlVal = new UrlValidator(schemes, 0);
+	   assertTrue(urlVal.isValid("http://www.google.com"));
+	   assertTrue(urlVal.isValid("bad://www.google.com"));
+	   assertTrue(!urlVal.isValid("https://www.google.com"));
+	   
+   }
 
    public void testIsValidScheme() {
       if (printStatus) {
@@ -102,7 +113,7 @@ protected void setUp() {
          String url = testBuffer.toString();
          boolean result = urlVal.isValid(url);
          if(result == true)
-        	 System.out.println(url);
+//        	 System.out.println(url);
          assertEquals(url, expected, result);
          if (printStatus) {
             if (printIndex) {
@@ -186,8 +197,11 @@ protected void setUp() {
    public static void main(String[] argv) {
 
 	   UrlValidatorTest fct = new UrlValidatorTest("url test");
+	   System.out.println("setup");
       fct.setUp();
+      System.out.println("testIsValid");
       fct.testIsValid();
+      System.out.println("testIsValidScheme");
       fct.testIsValidScheme();
    }
    //-------------------- Test data for creating a composite URL

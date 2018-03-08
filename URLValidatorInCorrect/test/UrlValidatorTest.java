@@ -19,9 +19,26 @@ public class UrlValidatorTest extends TestCase {
 
    
    
-   public void testManualTest()
+   public void testManualTest_1()
    {
-//You can use this function to implement your manual testing	   
+	   // This test shows the regex bug, basically anythin that is a "nested" link is falsely identified as invalid
+	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
+	   assertTrue(urlVal.isValid("http://www.google.com"));
+	   assertTrue(urlVal.isValid("http://www.google.com/thing/"));
+	   assertTrue(urlVal.isValid("http://www.google.com/thing/another"));
+	   
+   }
+   
+   public void testManualTest_2()
+   {   //This test shows the toLower _ toUpper bug
+	   // should be able to define custom schemes. in this case we allow only "http" and "bad" 
+	   // this implies that "https" should not be allowed
+	   System.out.println("manual test");
+	   String[] schemes = {"http","bad"};
+	   UrlValidator urlVal = new UrlValidator(schemes, 0);
+	   assertTrue(urlVal.isValid("http://www.google.com"));
+	   assertTrue(urlVal.isValid("bad://www.google.com"));
+	   assertTrue(!urlVal.isValid("https://www.google.com"));
 	   
    }
    
