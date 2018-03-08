@@ -270,7 +270,7 @@ public class UrlValidator implements Serializable {
         this.options = options;
 
         if (isOn(ALLOW_ALL_SCHEMES)) {
-        	System.out.println("here");
+//        	System.out.println("here");
             allowedSchemes = Collections.emptySet();
         } else {
             if (schemes == null) {
@@ -279,12 +279,12 @@ public class UrlValidator implements Serializable {
             allowedSchemes = new HashSet<String>(schemes.length);
             for(int i=0; i < schemes.length; i++) {
                 allowedSchemes.add(schemes[i].toLowerCase(Locale.ENGLISH));
-                System.out.println("scheme: " + schemes[i]);
+//                System.out.println("scheme: " + schemes[i]);
             }
         }
-        for (String s: allowedSchemes) {
-        	System.out.println(s);
-        }
+//        for (String s: allowedSchemes) {
+//        	System.out.println(s);
+//        }
 
         this.authorityValidator = authorityValidator;
     }
@@ -312,7 +312,6 @@ public class UrlValidator implements Serializable {
 
         String scheme = urlMatcher.group(PARSE_URL_SCHEME);
         if (!isValidScheme(scheme)) {
-        	System.out.println("scheme: " + scheme);
             return false;
         }
 
