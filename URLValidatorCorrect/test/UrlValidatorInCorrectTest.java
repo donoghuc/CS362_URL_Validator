@@ -1,5 +1,7 @@
 
 
+
+
 import junit.framework.TestCase;
 
 //You can use this as a skeleton for your 3 different test approach
@@ -10,10 +12,10 @@ import junit.framework.TestCase;
 
 
 
-public class UrlValidatorTest extends TestCase {
+public class UrlValidatorInCorrectTest extends TestCase {
 
 
-   public UrlValidatorTest(String testName) {
+   public UrlValidatorInCorrectTest(String testName) {
       super(testName);
    }
 
