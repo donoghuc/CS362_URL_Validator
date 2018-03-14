@@ -33,11 +33,11 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   // print out the URL and the PASS FAIL
 //	   System.out.println(result_observed);
 	   if (result_expected == result_observed) {
-		   System.out.println(url + ": PASSED");
+		   System.out.println(url + ", result expected = " + result_expected + ": PASSED TEST");
 		   return 0;
 	   }
 	   else {
-		   System.out.println(url + ": FAILED");
+		   System.out.println(url + ", result expected = " + result_expected + ": FAILED TEST");
 		   return 1;
 	   }
    }
@@ -45,13 +45,16 @@ public class UrlValidatorInCorrectTest extends TestCase {
    public void testManualTest_0()
    {
       System.out.println("Manual test 0");
+
       UrlValidator urlVal = new UrlValidator(null,null, UrlValidator.ALLOW_ALL_SCHEMES);
       //A valid URL is made of <scheme>://<authority><port><path>?<query>
       int test_fails = 0;
       /*test valid scheme, empty authority, valid path, expect to be false */
       /*REPORT a bug finding here: http scheme allows empty authority */
+
       test_fails += printExpected("http:///path",false,urlVal.isValid("http:///path"));
       test_fails += printExpected("http://www.a-.gov",false,urlVal.isValid("http://www.a-.gov"));
+
       /*test valid scheme,authority,port, expect to be true */
       test_fails += printExpected("http://www.oregon.gov",true,urlVal.isValid("http://www.oregon.gov"));
       /*test valid scheme,authority,path,port, expect to be true */
@@ -254,9 +257,125 @@ public class UrlValidatorInCorrectTest extends TestCase {
    public void testIsValid()
    {
 	   //You can use this function for programming based testing
+	   String schemes[] = {"http", "https", "ftp"};
+	   String validScheme = "http://";
+	   String validAuthority = "www.google.com";
+	   String validPath = "/search";
+	   String validPort = ":80";
+	   String validQuery = "?q=hello+world";
+	   int testFails = 0;
+	   UrlValidator urlVal = new UrlValidator(schemes, 0);
+	   //assertTrue(urlVal.isValid(validScheme + validAuthority + validPort + validPath + validQuery));
+	   
+	   System.out.println("TESTING UrlValidator");
+	   System.out.println("NOW TESTING WITH KNOWN FULLY VALID URL:");
+	   if(printExpected(validScheme + validAuthority + validPort + validPath + validQuery, true, urlVal.isValid(validScheme + validAuthority + validPort + validPath + validQuery)) > 0)
+	   {
+		   System.out.println("\nDEFINITE ISSUE WITH UrlValidator. PLEASE DEBUG.");
+		   if(!urlVal.isValidScheme(validScheme))
+		   {
+			   System.out.println("*There is an issue with scheme validity test.");
+		   }
+		   // Giving ClassNotDefined error for DomainValidator class - Aaron
+		   /*if(!urlVal.isValidAuthority(validAuthority))
+		   {
+			   System.out.println("*There is an issue with authority validity test.");
+		   }*/
+		   if(!urlVal.isValidPath(validPath))
+		   {
+			   System.out.println("*There is an issue with path validity test.");
+		   }
+		   if(!urlVal.isValidQuery(validQuery))
+		   {
+			   System.out.println("*There is an issue with query validity test.");
+		   }
+	   }
+	   
+	   System.out.println("\nNOW TESTING URL SCHEME VALIDITY TEST:");
+	   
+	   for(int i = 0; i < testSchemeCase.length; i++)
+	   {
+		   testFails += printExpected(testSchemeCase[i].item + validAuthority + validPort + validPath + validQuery, testSchemeCase[i].valid, urlVal.isValid(testSchemeCase[i].item + validAuthority + validPort + validPath + validQuery));
+	   }
+	   if(testFails > 0)
+	   {
+		   System.out.println("Issue with URL validity tests.");
+	   }
+	   
+	   testFails = 0;
+	   urlVal = new UrlValidator(null,null, UrlValidator.ALLOW_ALL_SCHEMES);
+	   System.out.println("\nNOW TESTING URL AUTHORITY VALIDITY TEST:");
+	   for(int i = 0; i < testAuthority.length; i++)
+	   {
+		   testFails += printExpected(validScheme + testAuthority[i].item + validPort + validPath + validQuery, testAuthority[i].valid, urlVal.isValid(validScheme + testAuthority[i].item + validPort + validPath + validQuery));
+	   }
+	   if(testFails > 0)
+	   {
+		   System.out.println("Issue with URL validity tests.");
+	   }
+	   
+	   testFails = 0;
+	   System.out.println("\nNOW TESTING URL PATH VALIDITY TEST:");
+	   for(int i = 0; i < testPath.length; i++)
+	   {
+		   testFails += printExpected(validScheme + validAuthority + validPort + testPath[i].item + validQuery, testPath[i].valid, urlVal.isValid(validScheme + validAuthority + validPort + testPath[i].item + validQuery));
+	   }
+	   if(testFails > 0)
+	   {
+		   System.out.println("Issue with URL validity tests.");
+	   }
+	   
+	   testFails = 0;
+	   System.out.println("\nNOW TESTING URL QUERY VALIDITY TEST:");
+	   for(int i = 0; i < testQuery.length; i++)
+	   {
+		   testFails += printExpected(validScheme + validAuthority + validPort + validPath + testQuery[i].item, testQuery[i].valid, urlVal.isValid(validScheme + validAuthority + validPort + validPath + testQuery[i].item));
+	   }
+	   if(testFails > 0)
+	   {
+		   System.out.println("Issue with URL validity tests.");
+	   }
 
    }
-   
+	   
+	   ResultPair[] testSchemeCase = {new ResultPair("http://", true),
+			   						new ResultPair("http://", true), 
+			   						new ResultPair("ftp://", true),
+			   						new ResultPair("FTP://", true),
+			   						new ResultPair("HTTPS://", true),
+			   						new ResultPair("https://", true),
+			   						new ResultPair("", true),
+			   						new ResultPair("foo://", false),
+			   						new ResultPair("FOO://", false),
+			   						new ResultPair("://", false),
+			   						new ResultPair("/", false)};
+	   
+	   ResultPair[] testAuthority = {new ResultPair("www.youtube.com", true),
+					new ResultPair("reddit.com", true), 
+					new ResultPair("oregonstate.edu", true),
+					new ResultPair("www.dol.wa.gov", true),
+					new ResultPair("4.3.2.1", true),
+					new ResultPair("250.251.252.253", true),
+					new ResultPair("500", false),
+					new ResultPair("jfuirhwf", false),
+	   				new ResultPair("-5.-5.-5.-5", false),
+	   				new ResultPair(".,l", false),
+	   				new ResultPair("", false),
+	   				new ResultPair("---", false)};
+	   
+	   ResultPair[] testPath = {new ResultPair("/search", true),
+				new ResultPair("/yes/", true), 
+				new ResultPair("/no/yes", true),
+				new ResultPair("", true),
+				new ResultPair("/", true),
+				new ResultPair("500", false),
+				new ResultPair("/..", false),
+                new ResultPair("/../", false),
+                new ResultPair("/yes//no", false)};
 
-
+	   ResultPair[] testQuery = {new ResultPair("?action=view", true),
+               new ResultPair("?action=edit&mode=up", true),
+               new ResultPair("", true),
+               new ResultPair("(((", false),
+               new ResultPair("(", false)};
 }
