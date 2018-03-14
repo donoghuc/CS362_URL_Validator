@@ -139,41 +139,26 @@ public class UrlValidatorInCorrectTest extends TestCase {
      System.out.println("First Partition test starting here...\n");
      UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
      String url;
-     Boolean urlBool;
+     int test_fails = 0;
      //test a valid authority + path/port/query
      for(int itr=0;itr<validAuthority.length;itr++){
         for(int base=0;base<validPath.length;base++){
            url="http://"+validAuthority[itr]+validPath[base];
-           urlBool=urlVal.isValid(url);
-           if(true!=urlBool)
-              System.out.printf("Failure: valid auth http://%s%s\n",validAuthority[itr],validPath[base]);
-           else
-              System.out.printf("Pass: valid auth http://%s%s\n",validAuthority[itr],validPath[base]);
-           
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         } 
      }
      System.out.println();
      for(int itr=0;itr<validAuthority.length;itr++){
         for(int base=0;base<validPort.length;base++){
            url="http://"+validAuthority[itr]+validPort[base];
-           urlBool=urlVal.isValid(url);
-           if(true!=urlBool)
-              System.out.printf("Failure: valid auth http://%s%s\n",validAuthority[itr],validPort[base]);
-           else
-              System.out.printf("Pass: valid auth http://%s%s\n",validAuthority[itr],validPort[base]);
-           
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         } 
      }
      System.out.println();
      for(int itr=0;itr<validAuthority.length;itr++){
         for(int base=0;base<validQuery.length;base++){
            url="http://"+validAuthority[itr]+validQuery[base];
-           urlBool=urlVal.isValid(url);
-           if(true!=urlBool)
-              System.out.printf("Failure: valid auth http://%s%s\n",validAuthority[itr],validQuery[base]);
-           else
-              System.out.printf("Pass: valid auth http://%s%s\n",validAuthority[itr],validQuery[base]);
-           
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         } 
      }
      System.out.println();
@@ -181,55 +166,37 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<invalidAuthority.length;itr++){
         for(int base=0;base<validPath.length;base++){
            url="http://"+invalidAuthority[itr]+validPath[base];
-           urlBool=urlVal.isValid(url);
-           if(false!=urlBool)
-              System.out.printf("Failure: invalid auth http://%s%s\n",invalidAuthority[itr],validPath[base]);
-           else
-              System.out.printf("Pass: invalid auth http://%s%s\n",invalidAuthority[itr],validPath[base]);
-           
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         } 
      }
      System.out.println();
      for(int itr=0;itr<invalidAuthority.length;itr++){
         for(int base=0;base<validPort.length;base++){
            url="http://"+invalidAuthority[itr]+validPort[base];
-           urlBool=urlVal.isValid(url);
-           if(false!=urlBool)
-              System.out.printf("Failure: invalid auth http://%s%s\n",invalidAuthority[itr],validPort[base]);
-           else
-              System.out.printf("Pass: invalid auth http://%s%s\n",invalidAuthority[itr],validPort[base]);
-           
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         } 
      }
      System.out.println();
      for(int itr=0;itr<invalidAuthority.length;itr++){
         for(int base=0;base<validQuery.length;base++){
            url="http://"+invalidAuthority[itr]+validQuery[base];
-           urlBool=urlVal.isValid(url);
-           if(false!=urlBool)
-              System.out.printf("Failure: invalid auth http://%s%s\n",invalidAuthority[itr],validQuery[base]);
-           else
-              System.out.printf("Pass: invalid auth http://%s%s\n",invalidAuthority[itr],validQuery[base]);
-           
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         } 
      }
-     System.out.println("First Partition test complted...\n"); 
+     assertTrue(test_fails == 0); 
   }
   
   public void testYourSecondPartition(){
      System.out.println("Second Partition test starting here...\n");
      UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES+UrlValidator.ALLOW_2_SLASHES);
      String url;
-     Boolean result;
+//     Boolean result;
+     int test_fails = 0;
      //test an invalid scheme + authority + Null/path/port/query
      for(int itr=0;itr<invalidScheme.length;itr++){
         for(int base=0;base<validAuthority.length;base++){
            url=(invalidScheme[itr]+validAuthority[base]).toString();
-           result=urlVal.isValid(url);
-           if(false!=result)
-              System.out.printf("Failure: invalid scheme %s\n",url);
-           else
-              System.out.printf("Pass: invalid scheme %s\n",url);  
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         }
         
      }
@@ -237,11 +204,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<invalidScheme.length;itr++){
         for(int base=0;base<validPort.length;base++){
            url=(invalidScheme[itr]+"www.abc.com"+validPort[base]).toString();
-           result=urlVal.isValid(url);
-           if(false!=result)
-              System.out.printf("Failure: invalid scheme %s\n",url);
-           else
-              System.out.printf("Pass: invalid scheme %s\n",url);  
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         }
         
      }
@@ -250,11 +213,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<invalidScheme.length;itr++){
         for(int base=0;base<validPath.length;base++){
            url=(invalidScheme[itr]+"www.abc.com"+validPath[base]).toString();
-           result=urlVal.isValid(url);
-           if(false!=result)
-              System.out.printf("Failure: invalid scheme %s\n",url);
-           else
-              System.out.printf("Pass: invalid scheme %s\n",url);  
+           test_fails += printExpected(url,false,urlVal.isValid(url)); 
         }
      }
      System.out.println();
@@ -264,11 +223,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<validScheme.length;itr++){
         for(int base=0;base<validAuthority.length;base++){
            url=(validScheme[itr]+validAuthority[base]).toString();
-           result=urlVal.isValid(url);
-           if(true!=result)
-              System.out.printf("Failure: valid scheme %s\n",url);
-           else
-              System.out.printf("Pass: valid scheme %s\n",url);  
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         }
         //System.out.printf("Due to RegexValidator authorityValidator failure, scheme other than http will crush the program.\n ");
      }
@@ -277,11 +232,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<validScheme.length;itr++){
         for(int base=0;base<validPort.length;base++){
            url=(validScheme[itr]+"www.abc.com"+validPort[base]).toString();
-           result=urlVal.isValid(url);
-           if(true!=result)
-              System.out.printf("Failure: valid scheme %s\n",url);
-           else
-              System.out.printf("Pass: valid scheme %s\n",url);  
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         }
         //System.out.printf("Due to RegexValidator authorityValidator called by isValidAuthority() function, scheme other than http will crush the program.\n ");
      }
@@ -290,16 +241,12 @@ public class UrlValidatorInCorrectTest extends TestCase {
      for(int itr=0;itr<validScheme.length;itr++){
         for(int base=0;base<validPath.length;base++){
            url=(validScheme[itr]+"www.abc.com"+validPath[base]).toString();
-           result=urlVal.isValid(url);
-           if(true!=result)
-              System.out.printf("Failure: valid scheme %s\n",url);
-           else
-              System.out.printf("Pass: valid scheme %s\n",url);  
+           test_fails += printExpected(url,true,urlVal.isValid(url)); 
         }
         //System.out.printf("Due to RegexValidator authorityValidator called by isValidAuthority() function, scheme other than http will crush the program.\n ");
      }
      System.out.println();
-     
+     assertTrue(test_fails == 0); 
      System.out.println("Second Partition test complted...\n");
 
   }
