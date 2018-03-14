@@ -27,6 +27,7 @@
 
       public ResultPair(String item, boolean valid) {
          this.item = item;
-         this.valid = !valid;  //Weather the individual part of url is valid.
+         // Removed !valid bug in order to use ResultPair in testIsValid() method - Aaron Peressini
+         this.valid = valid;  //Weather the individual part of url is valid. Bug found:this.valid = !valid; should be this.valid = valid
       }
    }

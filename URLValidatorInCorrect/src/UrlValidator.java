@@ -279,7 +279,7 @@ public class UrlValidator implements Serializable {
             }
             allowedSchemes = new HashSet<String>(schemes.length);
             for(int i=0; i < schemes.length; i++) {
-                allowedSchemes.add(schemes[i].toUpperCase(Locale.ENGLISH));
+                allowedSchemes.add(schemes[i].toUpperCase(Locale.ENGLISH)); // Bug found: toUpperCase should be toLowerCase
 
             }
         }
@@ -390,7 +390,7 @@ public class UrlValidator implements Serializable {
             return true;
         }
         // convert to ASCII if possible
-        final String authorityASCII = DomainValidator.unicodeToASCII(authority);
+        final String authorityASCII = DomainValidator.unicodeToASCII(authority); // This line continues to give me ClassNotDefinied exception when executed. Only executes if toUpper bug is fixed when calling UrlValidator.isValid() method
 
         Matcher authorityMatcher = AUTHORITY_PATTERN.matcher(authorityASCII);
         if (!authorityMatcher.matches()) {

@@ -163,7 +163,7 @@ public class DomainValidator implements Serializable {
         }
         String[] groups = domainRegex.match(domain);
         if (groups != null && groups.length > 0) {
-            return !isValidTld(groups[0]);
+            return !isValidTld(groups[0]); //Bug found; should be "return isValidTld" but bug is !isValidTld
         }
         return allowLocal && hostnameRegex.isValid(domain);
     }
