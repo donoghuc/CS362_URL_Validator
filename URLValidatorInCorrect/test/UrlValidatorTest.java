@@ -386,9 +386,22 @@ public class UrlValidatorTest extends TestCase {
 		   System.out.println("Issue with URL validity tests.");
 	   }
 
+	   System.out.println("\nNOW TESTING RANDOMLY CONSTRUCTED URLS:");
+	   for(int i = 0; i < 10000; i++)
+	   {
+		   int testSchemeIndex = (int)(Math.random()*(testSchemeCase.length));
+		   int testAuthorityIndex = (int)(Math.random()*(testAuthority.length));
+		   int testPortIndex = (int)(Math.random()*(testPort.length));
+		   int testPathIndex = (int)(Math.random()*(testPath.length));
+		   int testQueryIndex = (int)(Math.random()*(testQuery.length));
+		   if(i % 200 == 0)
+			   printExpected(testSchemeCase[testSchemeIndex].item + testAuthority[testAuthorityIndex].item + testPort[testPortIndex].item + testPath[testPathIndex].item + testQuery[testQueryIndex].item, 
+				   (testSchemeCase[testSchemeIndex].valid && testAuthority[testAuthorityIndex].valid && testPort[testPortIndex].valid && testPath[testPathIndex].valid && testQuery[testQueryIndex].valid), 
+				   urlVal.isValid(testSchemeCase[testSchemeIndex].item + testAuthority[testAuthorityIndex].item + testPort[testPortIndex].item + testPath[testPathIndex].item + testQuery[testQueryIndex].item)); 
+	   }
    }
 	   
-	   ResultPair[] testSchemeCase = {new ResultPair("http://", true),
+	   ResultPair[] testSchemeCase = {new ResultPair("HTTP://", true),
 			   						new ResultPair("http://", true), 
 			   						new ResultPair("ftp://", true),
 			   						new ResultPair("FTP://", true),
@@ -418,15 +431,21 @@ public class UrlValidatorTest extends TestCase {
 				new ResultPair("/no/yes", true),
 				new ResultPair("", true),
 				new ResultPair("/", true),
-				new ResultPair("500", false),
+				new ResultPair(".500", false),
 				new ResultPair("/..", false),
                 new ResultPair("/../", false),
                 new ResultPair("/yes//no", false)};
+	   
+	   ResultPair[] testPort = {new ResultPair(":80", true),
+               new ResultPair(":65535", true),
+               new ResultPair(":0", true),
+               new ResultPair("", true),
+               new ResultPair(":-1", false),
+              new ResultPair(":65636",false),
+               new ResultPair(":65a", false)};
 
 	   ResultPair[] testQuery = {new ResultPair("?action=view", true),
                new ResultPair("?action=edit&mode=up", true),
-               new ResultPair("", true),
-               new ResultPair("(((", false),
-               new ResultPair("(", false)};
+               new ResultPair("", true)};
 }
    
