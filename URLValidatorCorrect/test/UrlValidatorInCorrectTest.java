@@ -20,8 +20,8 @@ public class UrlValidatorInCorrectTest extends TestCase {
    /*this is for partition test usage*/
    String[] validAuthority = new String[]{"www.google.com","go.au","255.255.255.255","255.com"};
    String[] invalidAuthority = new String[]{"","1.2.3.4.5","go.a",".aaa"};
-   String[] validScheme = new String[]{"http://","h3t://","ftp://",""};
-   String[] invalidScheme = new String[]{"://","http:"};
+   String[] validScheme = new String[]{"http://","h3t://","ftp://"};
+   String[] invalidScheme = new String[]{"://","http:",""};
    String[] validPort= new String[]{":80",":65535",""};
    String[] invalidPort = new String[]{":-1",":65636",":65a"};
    String[] validPath= new String[]{"/test1","/$23","/test1/file"};
@@ -191,7 +191,8 @@ public class UrlValidatorInCorrectTest extends TestCase {
   
   public void testYourSecondPartition(){
      System.out.println("Second Partition test starting here...\n");
-     UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES+UrlValidator.ALLOW_2_SLASHES);
+     long options = UrlValidator.ALLOW_ALL_SCHEMES;
+     UrlValidator urlVal = new UrlValidator(null, null, options);
      String url;
 //     Boolean result;
      int test_fails = 0;
@@ -254,8 +255,8 @@ public class UrlValidatorInCorrectTest extends TestCase {
 
   }
    
-   public void testIsValid()
-   {
+  public void testIsValid()
+  {
 	   //You can use this function for programming based testing
 	   String schemes[] = {"http", "https", "ftp"};
 	   String validScheme = "http://";
@@ -301,7 +302,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   {
 		   System.out.println("Issue with URL validity tests.");
 	   }
-	   
+
 	   testFails = 0;
 	   urlVal = new UrlValidator(null,null, UrlValidator.ALLOW_ALL_SCHEMES);
 	   System.out.println("\nNOW TESTING URL AUTHORITY VALIDITY TEST:");
@@ -313,7 +314,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   {
 		   System.out.println("Issue with URL validity tests.");
 	   }
-	   
+
 	   testFails = 0;
 	   System.out.println("\nNOW TESTING URL PATH VALIDITY TEST:");
 	   for(int i = 0; i < testPath.length; i++)
@@ -324,7 +325,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   {
 		   System.out.println("Issue with URL validity tests.");
 	   }
-	   
+
 	   testFails = 0;
 	   System.out.println("\nNOW TESTING URL QUERY VALIDITY TEST:");
 	   for(int i = 0; i < testQuery.length; i++)
@@ -336,15 +337,28 @@ public class UrlValidatorInCorrectTest extends TestCase {
 		   System.out.println("Issue with URL validity tests.");
 	   }
 
-   }
+	   System.out.println("\nNOW TESTING RANDOMLY CONSTRUCTED URLS:");
+	   for(int i = 0; i < 10000; i++)
+	   {
+		   int testSchemeIndex = (int)(Math.random()*(testSchemeCase.length));
+		   int testAuthorityIndex = (int)(Math.random()*(testAuthority.length));
+		   int testPortIndex = (int)(Math.random()*(testPort.length));
+		   int testPathIndex = (int)(Math.random()*(testPath.length));
+		   int testQueryIndex = (int)(Math.random()*(testQuery.length));
+		   if(i % 200 == 0)
+			   printExpected(testSchemeCase[testSchemeIndex].item + testAuthority[testAuthorityIndex].item + testPort[testPortIndex].item + testPath[testPathIndex].item + testQuery[testQueryIndex].item, 
+				   (testSchemeCase[testSchemeIndex].valid && testAuthority[testAuthorityIndex].valid && testPort[testPortIndex].valid && testPath[testPathIndex].valid && testQuery[testQueryIndex].valid), 
+				   urlVal.isValid(testSchemeCase[testSchemeIndex].item + testAuthority[testAuthorityIndex].item + testPort[testPortIndex].item + testPath[testPathIndex].item + testQuery[testQueryIndex].item)); 
+	   }
+  }
 	   
-	   ResultPair[] testSchemeCase = {new ResultPair("http://", true),
+	   ResultPair[] testSchemeCase = {new ResultPair("HTTP://", true),
 			   						new ResultPair("http://", true), 
 			   						new ResultPair("ftp://", true),
 			   						new ResultPair("FTP://", true),
 			   						new ResultPair("HTTPS://", true),
 			   						new ResultPair("https://", true),
-			   						new ResultPair("", true),
+			   						new ResultPair("", false),
 			   						new ResultPair("foo://", false),
 			   						new ResultPair("FOO://", false),
 			   						new ResultPair("://", false),
@@ -368,14 +382,20 @@ public class UrlValidatorInCorrectTest extends TestCase {
 				new ResultPair("/no/yes", true),
 				new ResultPair("", true),
 				new ResultPair("/", true),
-				new ResultPair("500", false),
+				new ResultPair(".500", false),
 				new ResultPair("/..", false),
-                new ResultPair("/../", false),
-                new ResultPair("/yes//no", false)};
+               new ResultPair("/../", false),
+               new ResultPair("/yes//no", false)};
+	   
+	   ResultPair[] testPort = {new ResultPair(":80", true),
+              new ResultPair(":65535", true),
+              new ResultPair(":0", true),
+              new ResultPair("", true),
+              new ResultPair(":-1", false),
+             new ResultPair(":65636",false),
+              new ResultPair(":65a", false)};
 
 	   ResultPair[] testQuery = {new ResultPair("?action=view", true),
-               new ResultPair("?action=edit&mode=up", true),
-               new ResultPair("", true),
-               new ResultPair("(((", false),
-               new ResultPair("(", false)};
+              new ResultPair("?action=edit&mode=up", true),
+              new ResultPair("", true)};
 }
