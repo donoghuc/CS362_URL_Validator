@@ -96,12 +96,7 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   test_fails += printExpected("http://www.google.com",true,urlVal.isValid("http://www.google.com"));
 	   test_fails += printExpected("http://www.google.com/thing/",true,urlVal.isValid("http://www.google.com/thing/"));
 	   test_fails += printExpected("http://www.google.com/thing/another",true,urlVal.isValid("http://www.google.com/thing/another"));
-	   assertTrue(test_fails == 0);
-//	   assertTrue(urlVal.isValid("http://www.google.com"));
-//	   assertTrue(urlVal.isValid("http://www.google.com/thing/"));
-//	   assertTrue(urlVal.isValid("http://www.google.com/thing/another"));
-	   
-	   
+	   assertTrue(test_fails == 0);	   
    }
    
    public void testManualTest_2()
@@ -116,11 +111,6 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	   test_fails += printExpected("bad://www.google.com",true,urlVal.isValid("bad://www.google.com"));
 	   test_fails += printExpected("https://www.google.com",false,urlVal.isValid("https://www.google.com"));
 	   assertTrue(test_fails == 0);
-	   
-//	   assertTrue(urlVal.isValid("http://www.google.com"));
-//	   assertTrue(urlVal.isValid("bad://www.google.com"));
-//	   assertTrue(!urlVal.isValid("https://www.google.com"));
-	   
    }
    
   public void testmanualTest_3()
@@ -131,9 +121,6 @@ public class UrlValidatorInCorrectTest extends TestCase {
 	  test_fails += printExpected("file:///C:/Users/John/Desktop/donoghue_transcript_OSU.html",true,urlVal.isValid("file:///C:/Users/John/Desktop/donoghue_transcript_OSU.html"));
 	  
 	  assertTrue(test_fails == 0);
-	  
-//	  assertTrue(urlVal.isValid("file:///C:/Users/John/Desktop/donoghue_transcript_OSU.html"));
-	    
   }
    
    
